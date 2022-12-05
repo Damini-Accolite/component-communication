@@ -2,11 +2,12 @@
     <div class="row">
         <div class="col-md-6">
             <h1>Parent Component</h1>
-            <app-active-vendor></app-active-vendor>
+            <app-active-vendor [Active1] ="Active" (vendor)="sendblock($event)"></app-active-vendor>
+        
         </div>
         <div class="col-md-6">
             <h1>Block Vendor</h1>
-            <app-block-vendor></app-block-vendor>
+            <app-block-vendor [Blist]="Blocked"></app-block-vendor>
         </div>
     </div>
 </div>
